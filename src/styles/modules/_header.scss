@@ -1,0 +1,36 @@
+.header{
+    padding: 10px 20px;
+    border-radius: 6px;
+    background: #fff;
+    @include align-center;
+
+    &__username{
+        font-size: 16px;
+        white-space: nowrap;
+    }
+    &__info{
+        @include align-center;
+        column-gap: 16px;    
+    }
+    &__avatar{
+        font-size: 16px;
+        border-radius: 4px;
+        overflow: hidden;
+        min-width: 30px;
+        height: 30px;
+    }
+
+    &__avatar-img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.breadcrumb{
+    @include align-center;
+    flex-grow: 1;
+
+    .right-icon{
+        margin: 0 8px;
+    }
+}

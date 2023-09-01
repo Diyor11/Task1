@@ -1,0 +1,41 @@
+.navigation{
+    padding: 2rem 24px;
+    .logo{
+        width: 180px;
+    }    
+}
+
+.navs{
+    &__item{
+        list-style-type: none;
+        line-height: 25px;
+        cursor: pointer;
+        border-radius: 6px;
+        color: #838383;
+        
+        &:hover{
+            background: #F7F5FD;
+        }
+    }
+
+    &__icon{
+        margin-right: 4px;
+    }
+
+    .nav__link{
+        @include align-center;
+        color: #475467;
+        font-size: 18px;
+        padding: 8px 6px;
+    }
+    .nav__icon{
+        color: #475467;
+    }
+    .nav__link.active{
+        color: var(--main-color);
+
+        .nav_icon{
+            color: var(--main-color);
+        }
+    }
+}

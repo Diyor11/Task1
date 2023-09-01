@@ -1,0 +1,88 @@
+.table{
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+
+    &__header{
+        margin-bottom: 12px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__title{
+        font-size: 20px !important;
+    }
+}
+
+.pricing-inner{
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+}
+
+.pricing-income{
+    border-right: 1px solid #777;
+}
+
+.pricing__item{
+    flex-basis: 50%;
+    padding: 0 12px;
+
+    .status{
+        width: 30px;
+        height: 30px;
+        background: #F2F4F7;
+        border: none;
+        outline-width: 0;
+        border-radius: 2px;
+    }
+
+    .send-icon{
+        color: #14D934;
+    }
+    .recive-icon{
+        color: #FF4D4F;
+    }
+
+    .status_incrise{
+        color: #14D934;
+    }
+    .status_descrise{
+        color: #FF4D4F;
+    }
+
+    .discount{
+        color: #90A3BF;
+        font-size: 14px;
+    }
+}
+
+.pricing{
+    &__actions{
+        @include space-between;
+        margin-top: 1rem;
+        column-gap: 4px;
+    }
+}
+
+.progress__list{
+    padding: 0 16px;
+
+    .list-item{
+        list-style-type: none;
+        font-size: 14px;
+        margin-bottom: 6px;
+        font-family: sans-serif;
+        line-height: 20px;
+        @include space-between;
+
+        &__type{
+            color: #333;
+        }
+        &__value{
+            color: #000;
+            font-weight: 700;
+        }
+    }
+}
