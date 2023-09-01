@@ -1,6 +1,10 @@
+import { Button } from 'antd'
 import styled from 'styled-components'
+import {ButtonProps} from 'antd/es/button'
 
-export const Paper  = styled.div`
+export const TabsItem = styled(Button)<{isActive?: boolean} & ButtonProps>``
+
+export const Paper  = styled.div<{seporated?: boolean}>`
     background: #fff;
     padding: 16px;
     border-radius: 8px;
@@ -15,6 +19,8 @@ export const Paper  = styled.div`
         align-items: baseline;
         justify-content: space-between;
     }
+
+    display: ${({seporated}) => seporated? 'flex':'block'};
 ` 
 
 export const StatusBadge = styled.button<{send: boolean}>`
@@ -90,5 +96,22 @@ export const SectionHeader = styled.div`
 
     .section__title{
         font-size: 20px !important;
+    }
+`
+
+export const TabItem = styled(Button)<{isActive: boolean} & ButtonProps>`
+    border-width: ${({isActive}) => isActive ? '1.8px':'0.7px'};
+    border-style: solid;
+    border-color: ${(props) => props.isActive ? '#4623E9': 'gray'};
+    color: ${(props) => props.isActive ? '#4623E9': 'gray'};
+
+    .count{
+        width: 20px;
+        height: 20px;
+        background: ${({isActive}) => isActive ? '#4623E9':'#F2F4F7'};
+        color: ${({isActive}) => isActive ? '#fff':'#4623E9'};
+        border-radius: 50%;
+        font-size: 12px;
+        margin-left: 5px;
     }
 `

@@ -2,7 +2,7 @@ import { Button, Col, Row, Space, Typography } from 'antd'
 import React, { useState } from 'react'
 import { StudentTask, StudentsTable } from '../../component'
 import styled from 'styled-components'
-import { SectionHeader } from '../../styles/components'
+import { SectionHeader, TabItem } from '../../styles/components'
 import ClientsTable from '../../component/tables/ClientsTable'
 import { useModalContext } from '../../context'
 
@@ -41,12 +41,6 @@ const tabs: Tab[] = [
     {text: 'News', count: 3, key: 'news'},
 ]
 
-const TabItem = styled(Button)<{isActive: boolean}>`
-    border: 1px solid;
-    border-color: ${(props) => props.isActive ? '#0088e2': 'gray'};
-    color: ${(props) => props.isActive ? '#0088e2': 'gray'};
-`
-
 function Tabs() {
 
     const [active, setActive] = useState(tabs[0].key)
@@ -62,7 +56,7 @@ function Tabs() {
                 let isActive = active === item.key
                 return(
                     <TabItem 
-                        isActive={isActive}
+                        isActive={false}
                         key={item.key}
                         className={`tabs__item ${isActive ? 'active':''}`} 
                         onClick={() => handleClick(item)}

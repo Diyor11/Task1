@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import StudetnManager from '../../component/Manager/StudetnManager'
 import { Tab } from '../../types'
 import { studentTabs } from '../../mock/data'
+import { TabItem } from '../../styles/components'
 
 export default function Students() {
 
@@ -16,13 +17,6 @@ export default function Students() {
         </div>
   )
 }
-
-
-const TabItem = styled(Button)<{isActive: boolean}>`
-    border: 1px solid;
-    border-color: ${(props) => props.isActive ? '#0088e2': 'gray'};
-    color: ${(props) => props.isActive ? '#0088e2': 'gray'};
-`
 
 function Tabs() {
 

@@ -46,9 +46,9 @@ export const studentsData: StudentType[] = [
 
 export const clientsData: ClientType[] = [
   {key: '1', firstName: "Jones", startDay: '31/28', first: '31/28', second: '31/28', fourth: '31/28', thirt: '31/28'},
-  {key: '1', firstName: "Jones", startDay: '31/28', first: '31/28', second: '31/28', fourth: '31/28', thirt: '31/28'},
-  {key: '1', firstName: "Jones", startDay: '31/28', first: '31/28', second: '31/28', fourth: '31/28', thirt: '31/28'},
-  {key: '1', firstName: "Jones", startDay: '31/28', first: '31/28', second: '31/28', fourth: '31/28', thirt: '31/28'},
+  {key: '2', firstName: "Jones", startDay: '31/28', first: '31/28', second: '31/28', fourth: '31/28', thirt: '31/28'},
+  {key: '3', firstName: "Jones", startDay: '31/28', first: '31/28', second: '31/28', fourth: '31/28', thirt: '31/28'},
+  {key: '4', firstName: "Jones", startDay: '31/28', first: '31/28', second: '31/28', fourth: '31/28', thirt: '31/28'},
 ]
 
 export const studentTabs: Tab[] = [

@@ -1,4 +1,4 @@
-import { Space, Typography, List, Skeleton } from "antd";
+import { Space, Typography } from "antd";
 import {TfiLayoutMenuSeparated} from 'react-icons/tfi' 
 import ReactApexChart from "react-apexcharts";
 
